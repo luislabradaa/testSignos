@@ -27,9 +27,10 @@ exports.save = (req, res)=>{
     const q24 = req.body.q24;
     const q25 = req.body.q25;
     const q26 = req.body.q26;
+    const q27 = req.body.q27;
     conexion.query('INSERT INTO rasgos set ?',{adaptable:q1,amable:q2, amistoso:q3, carinoso: q4,critico: q5,confiable: q6,comunicativo: q7,caracFuerte: q8	
         ,estable: q9,elegante: q10,encantador: q11,extrovertido: q12,entusiasta: q13,leal: q14,lider: q15,inteligente: q16,persuasivo: 	q17,sentimental: q18	
-        ,simpatico: q19,tenaz: q20,visionario: q21,valiente: q22,generoso: q23,pacifista: q24,observador: q25,creativo: q26},(error,results)=>{
+        ,simpatico: q19,tenaz: q20,visionario: q21,valiente: q22,generoso: q23,pacifista: q24,observador: q25,creativo: q26, genero: q27},(error,results)=>{
         if(error){
             console.log(error);
         }else{
