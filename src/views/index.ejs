@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <title>Test RP</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-light">
+      <div class="container-fluid">
+        <span class="navbar-text">
+          Universidad Tecnológica del Norte de Guanajuato - Ingeniería en
+          Desarrollo y Gestión de Software.
+        </span>
+      </div>
+    </nav>
+    <div style="display: grid; place-items: center">
+      <h3>Responde cuidadosamente las siguientes preguntas.</h3>
+    </div>
+
+    <form action="/save" method="POST">
+        <div class="mb-3 " style="width: 600px; padding-left: 300px; ">
+          
+            <div class="mb-3">
+                <label for="q1" class="form-label mb-3">¿Te adaptas fácil a cualquier situación?</label>
+                <select
+                  class="form-select"
+                  id="q1"
+                  name="q1"
+                  aria-label="Default select example"
+                  required
+                >
+                  <option selected></option>
+                  <option value="0">Nada</option>
+                  <option value="1">Muy poco</option>
+                  <option value="2">No tan seguido</option>
+                  <option value="3">A veces</option>
+                  <option value="4">Siempre</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="q2" class="form-label mb-3">¿Eres amable con los demás?</label>
+                <select
+                  class="form-select"
+                  id="q2"
+                  name="q2"
+                  aria-label="Default select example"
+                  required
+                >
+                  <option selected></option>
+                  <option value="0">Nada</option>
+                  <option value="1">Muy poco</option>
+                  <option value="2">No tan seguido</option>
+                  <option value="3">A veces</option>
+                  <option value="4">Siempre</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="q3" class="form-label mb-3">¿Sueles ser amistoso con las personas?</label>
+                <select
+                  class="form-select"
+                  id="q3"
+                  name="q3"
+                  aria-label="Default select example"
+                  required
+                >
+                  <option selected></option>
+                  <option value="0">Nada</option>
+                  <option value="1">Muy poco</option>
+                  <option value="2">No tan seguido</option>
+                  <option value="3">A veces</option>
+                  <option value="4">Siempre</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="q4" class="form-label mb-3">¿Eres cariñoso/a con tus amistades?</label>
+                <select
+                  class="form-select"
+                  id="q4"
+                  name="q4"
+                  aria-label="Default select example"
+                  required
+                >
+                  <option selected></option>
+                  <option value="0">Nada</option>
+                  <option value="1">Muy poco</option>
+                  <option value="2">No tan seguido</option>
+                  <option value="3">A veces</option>
+                  <option value="4">Siempre</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="q5" class="form-label mb-3">¿Encuentras defectos facilmente en las personas?</label>
+                <select
+                  class="form-select"
+                  id="q5"
+                  name="q5"
+                  aria-label="Default select example"
+                  required
+                >
+                  <option selected></option>
+                  <option value="0">Nada</option>
+                  <option value="1">Muy poco</option>
+                  <option value="2">No tan seguido</option>
+                  <option value="3">A veces</option>
+                  <option value="4">Siempre</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="q6" class="form-label mb-3">¿Puedes guardar secretos si te lo piden?</label>
+                <select
+                  class="form-select"
+                  id="q6"
+                  name="q6"
+                  aria-label="Default select example"
+                  required
+                >
+                  <option selected></option>
+                  <option value="0">Nada</option>
+                  <option value="1">Muy poco</option>
+                  <option value="2">No tan seguido</option>
+                  <option value="3">A veces</option>
+                  <option value="4">Siempre</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="q7" class="form-label mb-3">¿Puedes expresarte cuando algo no sucede como lo esperas?</label>
+                <select
+                  class="form-select"
+                  id="q7"
+                  name="q7"
+                  aria-label="Default select example"
+                  required
+                >
+                  <option selected></option>
+                  <option value="0">Nada</option>
+                  <option value="1">Muy poco</option>
+                  <option value="2">No tan seguido</option>
+                  <option value="3">A veces</option>
+                  <option value="4">Siempre</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="q8" class="form-label mb-3">¿Te molestas rapidamente?</label>
+                <select
+                  class="form-select"
+                  id="q8"
+                  name="q8"
+                  aria-label="Default select example"
+                  required
+                >
+                  <option selected></option>
+                  <option value="0">Nada</option>
+                  <option value="1">Muy poco</option>
+                  <option value="2">No tan seguido</option>
+                  <option value="3">A veces</option>
+                  <option value="4">Siempre</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="q9" class="form-label mb-3">¿Te consideras una persona estable?</label>
+                <select
+                  class="form-select"
+                  id="q9"
+                  name="q9"
+                  aria-label="Default select example"
+                  required
+                >
+                  <option selected></option>
+                  <option value="0">No</option>
+                  <option value="0">Nada</option>
+                  <option value="1">Muy poco</option>
+                  <option value="2">No tan seguido</option>
+                  <option value="3">A veces</option>
+                  <option value="4">Siempre</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="q10" class="form-label mb-3">¿Mantienes la elegancia en cualquier momento?</label>
+                <select
+                  class="form-select"
+                  id="q10"
+                  name="q10"
+                  aria-label="Default select example"
+                  required
+                >
+                  <option selected></option>
+                  <option value="0">Nada</option>
+                  <option value="1">Muy poco</option>
+                  <option value="2">No tan seguido</option>
+                  <option value="3">A veces</option>
+                  <option value="4">Siempre</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="q11" class="form-label mb-3">¿Los demás te consideran atractivo?</label>
+                <select
+                  class="form-select"
+                  id="q11"
+                  name="q11"
+                  aria-label="Default select example"
+                  required
+                >
+                  <option selected></option>
+                  <option value="0">Nada</option>
+                  <option value="1">Muy poco</option>
+                  <option value="2">No tan seguido</option>
+                  <option value="3">A veces</option>
+                  <option value="4">Siempre</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="q12" class="form-label mb-3">¿Eres el primero en entablar una conversación con desconocidos?</label>
+                <select
+                  class="form-select"
+                  id="q12"
+                  name="q12"
+                  aria-label="Default select example"
+                  required
+                >
+                  <option selected></option>
+                  <option value="0">Nada</option>
+                  <option value="1">Muy poco</option>
+                  <option value="2">No tan seguido</option>
+                  <option value="3">A veces</option>
+                  <option value="4">Siempre</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="q13" class="form-label mb-3">¿Te gusta ver el lado bueno sin importar la situación?</label>
+                <select
+                  class="form-select"
+                  id="q13"
+                  name="q13"
+                  aria-label="Default select example"
+                  required
+                >
+                  <option selected></option>
+                  <option value="0">Nada</option>
+                  <option value="1">Muy poco</option>
+                  <option value="2">No tan seguido</option>
+                  <option value="3">A veces</option>
+                  <option value="4">Siempre</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="q14" class="form-label mb-3">¿Apoyas a los demás cuando lo necesitan?</label>
+                <select
+                  class="form-select"
+                  id="q14"
+                  name="q14"
+                  aria-label="Default select example"
+                  required
+                >
+                  <option selected></option>
+                  <option value="0">Nada</option>
+                  <option value="1">Muy poco</option>
+                  <option value="2">No tan seguido</option>
+                  <option value="3">A veces</option>
+                  <option value="4">Siempre</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="q15" class="form-label mb-3">¿Te gusta ser el lider en trabajos en equipo?</label>
+                <select
+                  class="form-select"
+                  id="q15"
+                  name="q15"
+                  aria-label="Default select example"
+                  required
+                >
+                  <option selected></option>
+                  <option value="0">Nada</option>
+                  <option value="1">Muy poco</option>
+                  <option value="2">No tan seguido</option>
+                  <option value="3">A veces</option>
+                  <option value="4">Siempre</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="q16" class="form-label mb-3">¿Consideras que eres inteligente?</label>
+                <select
+                  class="form-select"
+                  id="q16"
+                  name="q16"
+                  aria-label="Default select example"
+                  required
+                >
+                  <option selected></option>
+                  <option value="0">Nada</option>
+                  <option value="1">Muy poco</option>
+                  <option value="2">No tan seguido</option>
+                  <option value="3">A veces</option>
+                  <option value="4">Siempre</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="q17" class="form-label mb-3">¿Eres seguro y directo sobre tus ideas además de aceptar un no por respuesta?</label>
+                <select
+                  class="form-select"
+                  id="q17"
+                  name="q17"
+                  aria-label="Default select example"
+                  required
+                >
+                  <option selected></option>
+                  <option value="0">Nada</option>
+                  <option value="1">Muy poco</option>
+                  <option value="2">No tan seguido</option>
+                  <option value="3">A veces</option>
+                  <option value="4">Siempre</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="q18" class="form-label mb-3">¿Eres sentimental?</label>
+                <select
+                  class="form-select"
+                  id="q18"
+                  name="q18"
+                  aria-label="Default select example"
+                  required
+                >
+                  <option selected></option>
+                  <option value="0">Nada</option>
+                  <option value="1">Muy poco</option>
+                  <option value="2">No tan seguido</option>
+                  <option value="3">A veces</option>
+                  <option value="4">Siempre</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="q19" class="form-label mb-3">¿Sueles agradar a la gente facilmente?</label>
+                <select
+                  class="form-select"
+                  id="q19"
+                  name="q19"
+                  aria-label="Default select example"
+                  required
+                >
+                  <option selected></option>
+                  <option value="0">Nada</option>
+                  <option value="1">Muy poco</option>
+                  <option value="2">No tan seguido</option>
+                  <option value="3">A veces</option>
+                  <option value="4">Siempre</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="q20" class="form-label mb-3">¿Nunca aceptas la detorra y siempre mantienes la esperanza en las cosas que haces por más agotado que te encuentres?</label>
+                <select
+                  class="form-select"
+                  id="q20"
+                  name="q20"
+                  aria-label="Default select example"
+                  required
+                >
+                  <option selected></option>
+                  <option value="0">Nada</option>
+                  <option value="1">Muy poco</option>
+                  <option value="2">No tan seguido</option>
+                  <option value="3">A veces</option>
+                  <option value="4">Siempre</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="q21" class="form-label mb-3">¿Mantienes fijas tus metas y constantemente piensas en desarrollar nuevas cosas?</label>
+                <select
+                  class="form-select"
+                  id="q21"
+                  name="q21"
+                  aria-label="Default select example"
+                  required
+                >
+                  <option selected></option>
+                  <option value="0">Nada</option>
+                  <option value="1">Muy poco</option>
+                  <option value="2">No tan seguido</option>
+                  <option value="3">A veces</option>
+                  <option value="4">Siempre</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="q22" class="form-label mb-3">¿No le temes a nada y siempre dices que si para crear nuevas experiencias?</label>
+                <select
+                  class="form-select"
+                  id="q22"
+                  name="q22"
+                  aria-label="Default select example"
+                  required
+                >
+                  <option selected></option>
+                  <option value="0">Nada</option>
+                  <option value="1">Muy poco</option>
+                  <option value="2">No tan seguido</option>
+                  <option value="3">A veces</option>
+                  <option value="4">Siempre</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="q23" class="form-label mb-3">¿Eres compartido con las personas que lo necesitan?</label>
+                <select
+                  class="form-select"
+                  id="q23"
+                  name="q23"
+                  aria-label="Default select example"
+                  required
+                >
+                  <option selected></option>
+                  <option value="0">Nada</option>
+                  <option value="1">Muy poco</option>
+                  <option value="2">No tan seguido</option>
+                  <option value="3">A veces</option>
+                  <option value="4">Siempre</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="q24" class="form-label mb-3">¿Evitas los problemas y prefieres mantener una vida tranquila?</label>
+                <select
+                  class="form-select"
+                  id="q24"
+                  name="q24"
+                  aria-label="Default select example"
+                  required
+                >
+                  <option selected></option>
+                  <option value="0">Nada</option>
+                  <option value="1">Muy poco</option>
+                  <option value="2">No tan seguido</option>
+                  <option value="3">A veces</option>
+                  <option value="4">Siempre</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="q25" class="form-label mb-3">¿Observas cuidadosamente los detalles de lo que te rodea durante el día?</label>
+                <select
+                  class="form-select"
+                  id="q25"
+                  name="q25"
+                  aria-label="Default select example"
+                  required
+                >
+                  <option selected></option>
+                  <option value="0">Nada</option>
+                  <option value="1">Muy poco</option>
+                  <option value="2">No tan seguido</option>
+                  <option value="3">A veces</option>
+                  <option value="4">Siempre</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="q26" class="form-label mb-3">¿Obtienes ideas con facilidad cuando se trata de crear cosas nuevas?</label>
+                <select
+                  class="form-select"
+                  id="q26"
+                  name="q26"
+                  aria-label="Default select example"
+                  required
+                >
+                  <option selected></option>
+                  <option value="0">Nada</option>
+                  <option value="1">Muy poco</option>
+                  <option value="2">No tan seguido</option>
+                  <option value="3">A veces</option>
+                  <option value="4">Siempre</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <button type="submit" class="btn btn-primary">Enviar respuestas</button>
+              </div>
+            
+        </div>        
+    </form>
+    
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-light text-muted">
+      <!-- Section: Social media -->
+      <section
+        class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+      >
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block">
+          <span>Materia - Extracción de Conocimiento en Base de Datos</span>
+        </div>
+        <!-- Left -->
+
+        <!-- Right -->
+        <div>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+        <!-- Right -->
+      </section>
+      <!-- Section: Social media -->
+
+      <!-- Section: Links  -->
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3">Unidad IV</i>
+                <br>
+                <i class="fas fa-gem">Análisis no supervisado</i>
+              </h6>
+              <p>
+                Para esta actividad se recopilan los datos de las personas que realicen el test, en base a ello se aplica un algoritmo no supervisado que
+                permite calcular los signos zodiacales de cada registro obtenido.
+              </p>
+            </div>
+            
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4"> </div>
+            <!-- Grid column -->
+
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4"> </div>
+            <!-- Grid column -->
+
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Integrantes</h6>
+              <p><i class="fas fa-home me-3"></i> Juan Luis Negrete Labrada</p>
+              <p><i class="fas fa-phone me-3"></i> Paola Guadalupe Patlán Gónzalez</p>
+
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+
+      <div
+        class="text-center p-4"
+        style="background-color: rgba(0, 0, 0, 0.05)"
+      >
+        © 2023 Copyright:
+        <a class="text-reset fw-bold"> Alumnos de la UTNG</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
